@@ -1,0 +1,278 @@
+{
+  "reliability": {
+    "n_binary_judgments": 540,
+    "cohens_kappa_pooled": 0.8691,
+    "raw_agreement_binary": 0.9389,
+    "exact_composite_agreement": 0.6889,
+    "pearson_r_composite": 0.881
+  },
+  "field_rates": {
+    "OW-G": {
+      "grounded_correctness": 0.1556,
+      "evidence_passage_correctness": 0.0778,
+      "hallucination_absence": 0.3,
+      "appropriate_abstention": 0.4556,
+      "semantic_consistency": 0.9889,
+      "conflict_resolved_correctly": 0.1556,
+      "composite_mean": 2.1333,
+      "composite_sd": 1.155
+    },
+    "OW-Q": {
+      "grounded_correctness": 0.2444,
+      "evidence_passage_correctness": 0.1,
+      "hallucination_absence": 0.1889,
+      "appropriate_abstention": 0.5333,
+      "semantic_consistency": 1.0,
+      "conflict_resolved_correctly": 0.2556,
+      "composite_mean": 2.3222,
+      "composite_sd": 1.1926
+    }
+  },
+  "behaviour": {
+    "OW-G": {
+      "n": 45,
+      "declared_abstention_rate": 0.8222,
+      "any_regulation_evidence_rate": 0.9333,
+      "mean_evidence_chunks": 2.644
+    },
+    "OW-Q": {
+      "n": 45,
+      "declared_abstention_rate": 0.6667,
+      "any_regulation_evidence_rate": 1.0,
+      "mean_evidence_chunks": 2.978
+    }
+  },
+  "visibility": {
+    "n_queries": 45,
+    "generic_visibility_rate": 0.4667,
+    "institution_qualified_visibility_rate": 1.0,
+    "contingency_[[gi,g_noti],[notg_i,neither]]": [
+      [
+        21,
+        0
+      ],
+      [
+        24,
+        0
+      ]
+    ],
+    "mcnemar_exact_p": 1.1920928955078125e-07,
+    "mcnemar_statistic": 0.0,
+    "mean_visible_hits_generic": 1.689,
+    "mean_visible_hits_qualified": 8.689,
+    "by_category": {
+      "Cross-Document Conflict": {
+        "n": 15,
+        "generic": 0.4,
+        "qualified": 1.0
+      },
+      "Rule-Precedence Override": {
+        "n": 15,
+        "generic": 0.5333,
+        "qualified": 1.0
+      },
+      "Multi-Hop Exception": {
+        "n": 15,
+        "generic": 0.4667,
+        "qualified": 1.0
+      }
+    }
+  },
+  "ow_g_vs_ow_q": {
+    "pooled": {
+      "label": "OW-Q minus OW-G, pooled",
+      "n_pairs": 45,
+      "mean_a": 2.1333,
+      "sd_a": 1.155,
+      "mean_b": 2.3222,
+      "sd_b": 1.1926,
+      "mean_diff_b_minus_a": 0.1889,
+      "ci95": [
+        -0.1261,
+        0.5039
+      ],
+      "paired_t": 1.1753,
+      "paired_t_p": 0.24621,
+      "wilcoxon_p": 0.3577,
+      "cohens_dz": 0.1752,
+      "achieved_power": 0.2098,
+      "n_for_80pct_power": 258
+    },
+    "Cross-Document Conflict": {
+      "label": "OW-Q minus OW-G, Cross-Document Conflict",
+      "n_pairs": 15,
+      "mean_a": 2.1,
+      "sd_a": 1.213,
+      "mean_b": 2.3333,
+      "sd_b": 1.263,
+      "mean_diff_b_minus_a": 0.2333,
+      "ci95": [
+        -0.3629,
+        0.8296
+      ],
+      "paired_t": 0.767,
+      "paired_t_p": 0.4558,
+      "wilcoxon_p": 0.51244,
+      "cohens_dz": 0.198,
+      "achieved_power": 0.1104,
+      "n_for_80pct_power": 203
+    },
+    "Rule-Precedence Override": {
+      "label": "OW-Q minus OW-G, Rule-Precedence Override",
+      "n_pairs": 15,
+      "mean_a": 2.8,
+      "sd_a": 1.1148,
+      "mean_b": 2.9,
+      "sd_b": 0.9487,
+      "mean_diff_b_minus_a": 0.1,
+      "ci95": [
+        -0.4593,
+        0.6593
+      ],
+      "paired_t": 0.3504,
+      "paired_t_p": 0.73123,
+      "wilcoxon_p": 0.79705,
+      "cohens_dz": 0.0905,
+      "achieved_power": 0.0623,
+      "n_for_80pct_power": 961
+    },
+    "Multi-Hop Exception": {
+      "label": "OW-Q minus OW-G, Multi-Hop Exception",
+      "n_pairs": 15,
+      "mean_a": 1.5,
+      "sd_a": 0.7559,
+      "mean_b": 1.7333,
+      "sd_b": 1.1159,
+      "mean_diff_b_minus_a": 0.2333,
+      "ci95": [
+        -0.2805,
+        0.7472
+      ],
+      "paired_t": 0.89,
+      "paired_t_p": 0.38849,
+      "wilcoxon_p": 0.50942,
+      "cohens_dz": 0.2298,
+      "achieved_power": 0.1319,
+      "n_for_80pct_power": 151
+    }
+  },
+  "agent_benchmark": {
+    "OW-G_vs_agent_vector": {
+      "label": "OW-G minus agent-vector",
+      "n_pairs": 45,
+      "mean_a": 4.1,
+      "sd_a": 2.1469,
+      "mean_b": 2.1333,
+      "sd_b": 1.155,
+      "mean_diff_b_minus_a": -1.9667,
+      "ci95": [
+        -2.6364,
+        -1.2969
+      ],
+      "paired_t": -5.7553,
+      "paired_t_p": 0.0,
+      "wilcoxon_p": 1e-05,
+      "cohens_dz": -0.858,
+      "achieved_power": 0.9999,
+      "n_for_80pct_power": 13
+    },
+    "OW-Q_vs_agent_vector": {
+      "label": "OW-Q minus agent-vector",
+      "n_pairs": 45,
+      "mean_a": 4.1,
+      "sd_a": 2.1469,
+      "mean_b": 2.3222,
+      "sd_b": 1.1926,
+      "mean_diff_b_minus_a": -1.7778,
+      "ci95": [
+        -2.4278,
+        -1.1278
+      ],
+      "paired_t": -5.3605,
+      "paired_t_p": 0.0,
+      "wilcoxon_p": 2e-05,
+      "cohens_dz": -0.7991,
+      "achieved_power": 0.9995,
+      "n_for_80pct_power": 15
+    },
+    "OW-G_vs_agent_hybrid": {
+      "label": "OW-G minus agent-hybrid",
+      "n_pairs": 45,
+      "mean_a": 4.0667,
+      "sd_a": 2.096,
+      "mean_b": 2.1333,
+      "sd_b": 1.155,
+      "mean_diff_b_minus_a": -1.9333,
+      "ci95": [
+        -2.5442,
+        -1.3225
+      ],
+      "paired_t": -6.2037,
+      "paired_t_p": 0.0,
+      "wilcoxon_p": 0.0,
+      "cohens_dz": -0.9248,
+      "achieved_power": 1.0,
+      "n_for_80pct_power": 12
+    },
+    "OW-Q_vs_agent_hybrid": {
+      "label": "OW-Q minus agent-hybrid",
+      "n_pairs": 45,
+      "mean_a": 4.0667,
+      "sd_a": 2.096,
+      "mean_b": 2.3222,
+      "sd_b": 1.1926,
+      "mean_diff_b_minus_a": -1.7444,
+      "ci95": [
+        -2.3779,
+        -1.111
+      ],
+      "paired_t": -5.3976,
+      "paired_t_p": 0.0,
+      "wilcoxon_p": 2e-05,
+      "cohens_dz": -0.8046,
+      "achieved_power": 0.9995,
+      "n_for_80pct_power": 15
+    }
+  },
+  "agent_published_means": {
+    "vector": 4.1,
+    "hybrid": 4.0667
+  },
+  "category_means": {
+    "Cross-Document Conflict": {
+      "n": 15,
+      "OW-G": 2.1,
+      "OW-Q": 2.333,
+      "agent_vector": 4.467,
+      "agent_hybrid": 4.533
+    },
+    "Rule-Precedence Override": {
+      "n": 15,
+      "OW-G": 2.8,
+      "OW-Q": 2.9,
+      "agent_vector": 5.367,
+      "agent_hybrid": 5.233
+    },
+    "Multi-Hop Exception": {
+      "n": 15,
+      "OW-G": 1.5,
+      "OW-Q": 1.733,
+      "agent_vector": 2.467,
+      "agent_hybrid": 2.433
+    }
+  },
+  "provenance_fidelity": {
+    "OW-G": {
+      "correct_conclusion_correct_citation": 0,
+      "correct_conclusion_wrong_citation": 7,
+      "wrong_or_absent_conclusion": 38,
+      "n": 45
+    },
+    "OW-Q": {
+      "correct_conclusion_correct_citation": 0,
+      "correct_conclusion_wrong_citation": 11,
+      "wrong_or_absent_conclusion": 34,
+      "n": 45
+    }
+  }
+}
